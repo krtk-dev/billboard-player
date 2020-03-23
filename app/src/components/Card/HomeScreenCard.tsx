@@ -1,19 +1,23 @@
-import React from 'react'
+import React, { useEffect, PureComponent } from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 import { BaseButton } from 'react-native-gesture-handler'
+
 
 export interface HomeScreenCardProps {
     title: string;
     singer: string;
     image: string;
     number: number;
-    autoPlay: boolean;
+    playing: boolean;
+    onPress: () => void;
 }
 
-const HomeScreenCard: React.FC<HomeScreenCardProps> = ({ title, singer, image, number }) => {
+const HomeScreenCard: React.FC<HomeScreenCardProps> = ({ title, singer, image, number, playing, onPress }) => {
+
     return (
         <BaseButton
-            style={styles.container}
+            onPress={onPress}
+            style={[styles.container, { backgroundColor: playing ? '#ddd' : '#fff' }]}
         >
             <View style={styles.numberContainer} >
                 <Text style={{ fontSize: 20 }} >{number}</Text>
@@ -28,6 +32,7 @@ const HomeScreenCard: React.FC<HomeScreenCardProps> = ({ title, singer, image, n
                 resizeMode='cover'
             />
         </BaseButton>
+
     )
 }
 
@@ -35,7 +40,6 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: 76,
-        backgroundColor: '#fff',
         flexDirection: 'row',
     },
     numberContainer: {

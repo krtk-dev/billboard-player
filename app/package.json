@@ -24,6 +24,7 @@
     "react-native-cheerio": "^1.0.0-rc.4",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-vector-icons": "^6.6.0",
+    "react-native-youtube": "^2.0.0",
     "stream": "^0.0.2",
     "util": "^0.12.2"
   },

@@ -27,7 +27,7 @@ const HomeScreen = () => {
     }
 
     return (
-        <View style={{ flex: 1 }} >
+        <View style={{ flex: 1, backgroundColor: '#fff' }} >
             <Header
                 value={autoplay}
                 onPress={() => setAutoPlayProcess(!autoplay)}

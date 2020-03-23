@@ -46,6 +46,7 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
                         data={data}
                         renderItem={({ item, index }) => <HomeScreenCard {...item} autoPlay={autoPlay} number={index + 1} />}
                         keyExtractor={(_, index) => index.toString()}
+                        ListFooterComponent={<View style={{ height: 100 }} />}
                     />
             }
         </>

@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@react-native-firebase/admob": "^6.3.4",
     "@react-native-firebase/app": "^6.3.4",
     "@react-native-firebase/functions": "^6.3.4",
     "@types/cheerio": "^0.22.17",

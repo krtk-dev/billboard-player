@@ -11,14 +11,17 @@ interface BodyProps {
 
 const Body: React.FC<BodyProps> = ({ autoPlay, data, loading }) => {
     return (
-        loading ?
-            <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }} ><ActivityIndicator /></View>
-            :
-            <FlatList
-                data={data}
-                renderItem={({ item }) => <HomeScreenCard {...item} autoPlay={autoPlay} />}
-                keyExtractor={(_, index) => index.toString()}
-            />
+        <>
+            {loading ?
+                <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }} ><ActivityIndicator /></View>
+                :
+                <FlatList
+                    data={data}
+                    renderItem={({ item, index }) => <HomeScreenCard {...item} autoPlay={autoPlay} number={index + 1} />}
+                    keyExtractor={(_, index) => index.toString()}
+                />
+            }
+        </>
     )
 }
 

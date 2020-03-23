@@ -35,7 +35,7 @@ const HomeScreen = () => {
 
     useEffect(() => {
         init()
-    })
+    }, [])
 
     const setAutoPlayProcess = (value: boolean) => {
         setAutoplay(value)

@@ -1,14 +1,12 @@
 import * as functions from 'firebase-functions'
-// import { Hot100Item } from '..'
+import { Hot100Item } from '..'
 import BillboardHot100Crawling, { Hot100CrawlingReturn } from './BillBoardHot100Crawling'
 import { HttpsError } from 'firebase-functions/lib/providers/https'
-import getYoutubeIdImage from './getYoutubeIdImage'
-import { setYoutubeData, getYoutubeData, updateHot100Docs } from '../lib/hot100'
+import { updateHot100TestDocs, getYoutubeData, setYoutubeData } from '.././lib/hot100'
 import titleSinger2Id from '../lib/generator/titleSinger2Id'
-import { Hot100Item } from '..'
-// import { updateHot100Docs } from '.././lib/hot100'
+import getYoutubeIdImage from './getYoutubeIdImage'
 
-const updateHot100 = functions.https.onRequest(async (req, res) => {
+const updateHot100Test = functions.https.onRequest(async (req, res) => {
     try {
         const Hot100List: Hot100Item[] = []
         const Hot100Crawling: Hot100CrawlingReturn[] = await BillboardHot100Crawling()
@@ -43,7 +41,7 @@ const updateHot100 = functions.https.onRequest(async (req, res) => {
             }
         }
 
-        await updateHot100Docs(Hot100List)
+        await updateHot100TestDocs(Hot100List)
         res.status(200).send(Hot100List)
     } catch (error) {
         throw new HttpsError('unknown', error.toString())
@@ -53,4 +51,4 @@ const updateHot100 = functions.https.onRequest(async (req, res) => {
 
 
 
-export default updateHot100
+export default updateHot100Test

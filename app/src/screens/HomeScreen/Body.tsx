@@ -11,7 +11,6 @@ import { WIDTH } from '../../components/style'
 interface BodyProps {
     autoPlay: boolean;
 }
-const vidios = ['uLHqpjW3aDs', 'oygrmJFKYZY', 'l0U7SxXHkPY']
 
 const Body: React.FC<BodyProps> = ({ autoPlay }) => {
 
@@ -25,8 +24,9 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
     const init = async () => {
         setLoading(true)
         setError(false)
+        setCurrentIndex(0)
         try {
-            const res = await getHot100()
+            const res = await getHot100({ afterRank: 0 })
             setData(res as Hot100[])
             setLoading(false)
         } catch (error) {
@@ -67,6 +67,18 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
 
     }
 
+    const getMore = async () => {
+        if (data.length >= 100) return
+        try {
+            const res = await getHot100({ afterRank: data.length })
+            const newData = res as Hot100[]
+            setData(data.concat(newData))
+        } catch (error) {
+            console.log('Error: ' + error);
+            setError(true)
+        }
+    }
+
     return (
         <>
             {loading ?
@@ -79,7 +91,7 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
                         {currentIndex >= 0 && currentIndex < data.length &&
                             <YouTube
                                 ref={youtubeRef}
-                                videoId={vidios[currentIndex] != null ? vidios[currentIndex] : 'error'} // The YouTube video ID
+                                videoId={data[currentIndex].youtube != null ? data[currentIndex].youtube : 'error'} // The YouTube video ID
                                 play
                                 apiKey={YOUTUBEAPIKEY}
                                 onChangeState={(e: any) => {
@@ -108,7 +120,11 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
                                 />
                             }
                             keyExtractor={(_, index) => index.toString()}
-                            ListFooterComponent={<View style={{ height: 100 }} />}
+                            ListFooterComponent={<View style={{ height: data.length >= 100 ? 100 : 0 }} />}
+                            onEndReached={getMore}
+                            onEndReachedThreshold={3}
+                            refreshing={loading}
+                            onRefresh={init}
                         />
                     </>
             }

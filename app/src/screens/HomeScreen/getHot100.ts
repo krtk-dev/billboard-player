@@ -5,14 +5,13 @@ export interface Hot100 {
     singer: string;
     image: string;
     rank: number;
+    youtube: string;
 }
 
-export default async function (): Promise<Hot100[]> {
+export default async function (params: object): Promise<Hot100[]> {
     const instance = functions().httpsCallable('getHot100')
     try {
-        console.log(1)
-        const response = await instance()
-        console.log(2)
+        const response = await instance(params)
         return response.data
     } catch (error) {
         throw error

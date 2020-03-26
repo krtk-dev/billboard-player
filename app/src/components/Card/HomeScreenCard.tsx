@@ -26,11 +26,11 @@ const HomeScreenCard: React.FC<HomeScreenCardProps> = ({ title, singer, image, n
                 <Text style={{ fontSize: 18 }} >{title}</Text>
                 <Text>{singer}</Text>
             </View>
-            <Image
+            {image != '' && <Image
                 style={styles.imageContainer}
                 source={{ uri: image }}
                 resizeMode='cover'
-            />
+            />}
         </BaseButton>
 
     )
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     },
     imageContainer: {
         height: '100%',
-        width: 52,
+        width: 68,
         position: 'absolute',
         right: 0
     }

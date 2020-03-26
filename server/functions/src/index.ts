@@ -5,7 +5,8 @@ export type Hot100Item = {
     singer: string,
     image: string,
     rank: number,
+    youtube: string;
 }
 
 
-export { getHot100, updateHot100 } from './hot100'
+export { getHot100, updateHot100, updateHot100Test } from './hot100'

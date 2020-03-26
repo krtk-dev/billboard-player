@@ -1,5 +1,5 @@
 import { QuerySnapshot, DocumentSnapshot } from '@google-cloud/firestore'
-import { hot100Collection, hot100TestCollection, youtubeDataCollection, dataCollection, dataHot100dataType } from './firebase'
+import { hot100Collection, youtubeDataCollection, dataCollection, dataHot100dataType } from './firebase'
 import { Hot100Item } from '..'
 import { dateNowGenerator } from './generator/dateGenerator'
 import idGenerator from './generator/idGenerator'
@@ -43,33 +43,13 @@ export const updateHot100Docs = async (newHot100: Hot100Item[]) => {
     }
 
     await dataCollection('hot100Data').set(data)
+    await dataCollection('hot100Data').collection('old').doc(id).set(data)
 
 
     for (const i in newHot100) {
         await hot100Collection(id).add(newHot100[i])
     }
 
-    return
-}
-
-export const updateHot100TestDocs = async (newHot100: Hot100Item[]) => {
-
-    await initHot100Test()
-
-    for (const i in newHot100) {
-        await hot100TestCollection.add(newHot100[i])
-    }
-
-    return
-}
-
-
-export const initHot100Test = async () => {
-    const res = await hot100TestCollection.get()
-    const docs = res.docs
-    for (const i in docs) {
-        await hot100TestCollection.doc(docs[i].id).delete()
-    }
     return
 }
 

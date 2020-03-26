@@ -37,7 +37,7 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
     }
 
     useEffect(() => {
-        functions().useFunctionsEmulator('http://localhost:5000');
+        // functions().useFunctionsEmulator('http://localhost:5000');
         init()
     }, [])
 

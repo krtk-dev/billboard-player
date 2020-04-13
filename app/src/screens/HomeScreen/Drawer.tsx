@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, FlatList, Linking, Share } from 'react-native'
+import { StyleSheet, Text, View, FlatList, Linking, Share, TouchableWithoutFeedback } from 'react-native'
 import { BaseButton } from 'react-native-gesture-handler'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -35,14 +35,23 @@ const Drawer = () => {
         <View style={styles.container} >
             <FlatList
                 data={drawerItems}
-                renderItem={({ item }) => <BaseButton
-                    onPress={item.onPress}
-                    style={styles.btn} >
-                    <View style={styles.icon} >
-                        {item.icon}
-                    </View>
-                    <Text >{item.text}</Text>
-                </BaseButton>}
+                renderItem={({ item, index }) =>
+                    <TouchableWithoutFeedback
+                        key={index}
+                        onPress={item.onPress}
+
+                    >
+                        <BaseButton
+                            style={styles.btn}
+                        >
+                            <View style={styles.icon} >
+                                {item.icon}
+                            </View>
+                            <Text >{item.text}</Text>
+
+                        </BaseButton>
+                    </TouchableWithoutFeedback>
+                }
             />
 
         </View>
@@ -53,7 +62,7 @@ export default Drawer
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        width: '100%',
         backgroundColor: '#fff'
     },
     btn: {

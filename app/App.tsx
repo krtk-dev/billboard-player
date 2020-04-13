@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import AppContainer from './src/screens'
-import BottomBannerAds from './src/components/View/BottomBannerAds';
 import messaging from '@react-native-firebase/messaging';
 
 const App = () => {
@@ -16,7 +15,6 @@ const App = () => {
   return (
     <>
       <AppContainer />
-      <BottomBannerAds />
     </>
   );
 };

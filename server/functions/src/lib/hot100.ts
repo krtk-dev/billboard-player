@@ -18,7 +18,7 @@ export const getRecentHot100OrderByRank = async (afterRank: number = 0): Promise
     return await hot100Collection(id)
         .where('rank', '>', afterRank)
         .orderBy('rank', 'asc')
-        .limit(10)
+        .limit(20)
         .get()
 }
 

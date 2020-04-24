@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.koreanthinker.billboard'
 const FACEBOOK = 'https://www.facebook.com/KoreanThinker-408391183302145'
-const INSTAGRAM = 'https://www.instagram.com/dev_hyun/?hl=ko'
+const INSTAGRAM = 'https://www.instagram.com/dev_hyun'
 
 const Drawer = () => {
 

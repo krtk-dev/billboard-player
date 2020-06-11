@@ -14,7 +14,7 @@ const updateHot100 = functions.https.onRequest(async (req, res) => {
         const Hot100Crawling: Hot100CrawlingReturn[] = await BillboardHot100Crawling()
         if (Hot100Crawling.length !== 100) return
         for (const i in Hot100Crawling) {
-            const id = titleSinger2Id(Hot100Crawling[i].title, Hot100Crawling[i].singer)
+            const id = titleSinger2Id(Hot100Crawling[i].title, Hot100Crawling[i].singer).replace('/', '')
             const doc = await getYoutubeData(id)
             const data = doc.data()
             console.log(data)

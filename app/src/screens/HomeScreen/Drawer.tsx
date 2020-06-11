@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, FlatList, Linking, Share, TouchableWithoutFeedback } from 'react-native'
+import { StyleSheet, Text, View, FlatList, Linking, Share, TouchableWithoutFeedback, Animated } from 'react-native'
 import { BaseButton } from 'react-native-gesture-handler'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -7,7 +7,12 @@ const PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.koreanthin
 const FACEBOOK = 'https://www.facebook.com/KoreanThinker-408391183302145'
 const INSTAGRAM = 'https://www.instagram.com/dev_hyun'
 
-const Drawer = () => {
+interface DrawerProps {
+    onClose: () => void;
+    animation: Animated.Value;
+}
+
+const Drawer: React.FC<DrawerProps> = ({ onClose, animation }) => {
 
     const drawerItems = [
         {
@@ -29,6 +34,11 @@ const Drawer = () => {
             icon: <Icon name='instagram' size={20} />,
             text: 'INSTAGRAM',
             onPress: () => Linking.openURL(INSTAGRAM)
+        },
+        {
+            icon: <Icon name='close' size={20} />,
+            text: 'CLOSE',
+            onPress: () => onClose()
         }
     ]
     return (
@@ -63,7 +73,8 @@ export default Drawer
 const styles = StyleSheet.create({
     container: {
         width: '100%',
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
+        elevation: 10
     },
     btn: {
         width: '100%',

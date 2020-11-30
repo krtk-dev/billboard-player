@@ -4,12 +4,6 @@ import Header from './Header'
 import Body from './Body'
 import Drawer from './Drawer';
 import BottomBannerAds from '../../components/View/BottomBannerAds';
-import { InterstitialAd } from '@react-native-firebase/admob';
-import { ADMOBEXIT } from '../../../secret';
-
-const exitIntersitial = InterstitialAd.createForAdRequest(ADMOBEXIT, {
-    requestNonPersonalizedAdsOnly: true,
-});
 
 const HomeScreen = () => {
 
@@ -29,35 +23,6 @@ const HomeScreen = () => {
 
     useEffect(() => {
         init()
-
-        exitIntersitial.load()
-
-        const backAction = () => {
-
-            ToastAndroid.show("Press again to exit", ToastAndroid.SHORT)
-            const backHandler2 = BackHandler.addEventListener(
-                "hardwareBackPress",
-                () => {
-                    BackHandler.exitApp()
-                    return true
-                }
-            )
-            setTimeout(() => {
-                backHandler2.remove()
-            }, 5000);
-
-            exitIntersitial.loaded && exitIntersitial.show()
-
-            return true;
-        };
-
-        const backHandler = BackHandler.addEventListener(
-            "hardwareBackPress",
-            backAction
-        );
-        return () => {
-            backHandler.remove();
-        };
     }, [])
 
 

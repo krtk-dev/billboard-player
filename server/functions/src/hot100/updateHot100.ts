@@ -8,7 +8,7 @@ import titleSinger2Id from '../lib/generator/titleSinger2Id'
 import { Hot100Item } from '..'
 // import { updateHot100Docs } from '.././lib/hot100'
 
-const updateHot100 = functions.https.onRequest(async (req, res) => {
+const updateHot100 = functions.runWith({ timeoutSeconds: 300, memory: '2GB' }).pubsub.schedule('every tuesday 03:30').onRun(async (context) => {
     try {
         const Hot100List: Hot100Item[] = []
         const Hot100Crawling: Hot100CrawlingReturn[] = await BillboardHot100Crawling()
@@ -44,11 +44,11 @@ const updateHot100 = functions.https.onRequest(async (req, res) => {
         }
 
         await updateHot100Docs(Hot100List)
-        res.status(200).send(Hot100List)
+        // res.status(200).send(Hot100List)
     } catch (error) {
         throw new HttpsError('unknown', error.toString())
     }
-    return 'done'
+    return null
 })
 
 

@@ -1,4 +1,4 @@
-import React, { useEffect, PureComponent } from 'react'
+import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
 import { BaseButton } from 'react-native-gesture-handler'
 

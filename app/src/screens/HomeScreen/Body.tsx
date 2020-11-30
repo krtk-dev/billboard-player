@@ -3,7 +3,6 @@ import { View, Text, FlatList, ActivityIndicator } from 'react-native'
 import HomeScreenCard from '../../components/Card/HomeScreenCard'
 import ErrorScreen from './ErrorScreen'
 import getHot100, { Hot100 } from './getHot100'
-import functions from '@react-native-firebase/functions';
 import { YOUTUBEAPIKEY } from '../../../secret'
 import YouTube from 'react-native-youtube';
 import { WIDTH } from '../../components/style'
@@ -19,6 +18,7 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
     const [error, setError] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(-1)
     const flatListRef = useRef<FlatList<Hot100>>(null)
+    //@ts-ignore
     const youtubeRef = useRef<Youtube>(null)
 
     const init = async () => {
@@ -94,6 +94,7 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
                                 videoId={data[currentIndex].youtube != null ? data[currentIndex].youtube : 'error'} // The YouTube video ID
                                 play
                                 apiKey={YOUTUBEAPIKEY}
+                                //@ts-ignore
                                 onChangeState={(e: any) => {
                                     if (e.state == 'ended') {
                                         nextSong()

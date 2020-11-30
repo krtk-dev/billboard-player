@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AppContainer from './src/screens'
 import messaging from '@react-native-firebase/messaging';
-import { AsyncStorage, Alert, Linking } from 'react-native';
+import { AsyncStorage, Alert, Linking, Text, View } from 'react-native';
 
 const PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.koreanthinker.billboard'
 
@@ -12,7 +12,7 @@ const App = () => {
       messaging().registerForRemoteNotifications();
       rate()
     } catch (error) {
-
+      console.log(error)
     }
   }, [])
 
@@ -47,6 +47,9 @@ const App = () => {
 
   return (
     <>
+      {/* <View>
+        <Text>hi</Text>
+      </View> */}
       <AppContainer />
     </>
   );

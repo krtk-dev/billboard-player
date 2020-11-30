@@ -120,7 +120,7 @@ const Body: React.FC<BodyProps> = ({ autoPlay }) => {
                                     onPress={() => setCurrentIndex(index)}
                                 />
                             }
-                            keyExtractor={(_, index) => index.toString()}
+                            keyExtractor={({ singer, title }, index) => singer + title}
                             ListFooterComponent={<View style={{ height: data.length >= 100 ? 100 : 0 }} />}
                             onEndReached={getMore}
                             onEndReachedThreshold={3}

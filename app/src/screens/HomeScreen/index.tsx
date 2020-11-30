@@ -3,7 +3,7 @@ import { View, AsyncStorage, BackHandler, ToastAndroid, Animated, StyleSheet, Ea
 import Header from './Header'
 import Body from './Body'
 import Drawer from './Drawer';
-import BottomBannerAds from '../../components/View/BottomBannerAds';
+// import BottomBannerAds from '../../components/View/BottomBannerAds';
 
 const HomeScreen = () => {
 
@@ -35,7 +35,8 @@ const HomeScreen = () => {
         Animated.timing(animation, {
             toValue: 1,
             duration: 200,
-            easing: Easing.inOut(Easing.ease)
+            easing: Easing.inOut(Easing.ease),
+            useNativeDriver: false
         }).start()
     }
 
@@ -43,7 +44,8 @@ const HomeScreen = () => {
         Animated.timing(animation, {
             toValue: 0,
             duration: 200,
-            easing: Easing.inOut(Easing.ease)
+            easing: Easing.inOut(Easing.ease),
+            useNativeDriver: false
         }).start()
     }
 
@@ -80,9 +82,9 @@ const HomeScreen = () => {
                     outputRange: [0, 250]
                 })
             }]} >
-                <View>
+                {/* <View>
                     <BottomBannerAds />
-                </View>
+                </View> */}
                 <Drawer
                     animation={animation}
                     onClose={drawerClose}

@@ -1,0 +1,37 @@
+name: CD Functions
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - "functions/**"
+
+jobs:
+  build-and-deploy:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node: ["16"]
+    name: Node ${{ matrix.node }} (${{ matrix.platform }})
+    runs-on: ${{ matrix.platform }}
+    defaults:
+      run:
+        working-directory: functions
+
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install packages and build
+        run: |
+          yarn
+          yarn build
+
+      - name: Install firebase
+        run: npm i firebase-tools -g 
+          
+      - name: Deploy to Firebase
+        run: firebase deploy --only functions --token ${{ secrets.FIREBASE_DEPLOY_TOKEN }}

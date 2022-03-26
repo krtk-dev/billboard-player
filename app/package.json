@@ -1,0 +1,76 @@
+{
+  "name": "app",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "adb devices && react-native run-android",
+    "ios": "react-native run-ios",
+    "android:release": "adb devices && react-native run-android --variant=release",
+    "ios:device": "react-native run-ios --device \"Namgunghyun13mini\"",
+    "ios:release": "react-native run-ios --configuration Release",
+    "ios:device:release": "react-native run-ios --device \"Namgunghyun13mini\" --configuration Release",
+    "android:assembleRelease": "cd android && ./gradlew assembleRelease",
+    "android:bundleRelease": "cd android && ./gradlew bundleRelease",
+    "gradlew:clean": "cd android && ./gradlew clean && cd ..",
+    "node:clean": "rm -rf node_modules && rm yarn.lock",
+    "node:clean:force": "yarn cache clean",
+    "android:clean": "rm -rf android/build && sudo rm -rf android/app/build && sudo rm -rf android/.gradle",
+    "pod": "cd ios && pod install && cd ..",
+    "pod:clean": "cd ios && rm -rf Pods && rm Podfile.lock && pod deintegrate && pod setup && pod repo update && cd ..",
+    "pod:clean:force": "sudo rm -rf ~/Library/Caches/CocoaPods",
+    "ios:clean": "cd ios && xcodebuild clean",
+    "ios:clean:force": "rm -rf ~/Library/Developer/Xcode/DerivedData/*",
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "npm run test -- --coverage --watchAll=false",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "postversion": "react-native-version --never-amend",
+    "oss": "npx license-checker --json --out ./src/assets/oss.json"
+  },
+  "dependencies": {
+    "@react-navigation/drawer": "^6.3.1",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/stack": "^6.1.1",
+    "react": "17.0.2",
+    "react-native": "0.67.2",
+    "react-native-gesture-handler": "^2.2.0",
+    "react-native-in-app-review": "^3.3.2",
+    "react-native-reanimated": "^2.4.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.11.1",
+    "react-native-status-bar-height": "^2.6.0",
+    "react-native-vector-icons": "^9.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.66.15",
+    "@types/react-native-vector-icons": "^6.4.10",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-native-version": "^4.0.0",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

@@ -1,5 +1,0 @@
-일주일에 한번 updateHot100실행해줘야함
-
-추가기능
-- 자동 업데이트 (cloud scheduler) + FCM까지 연동
-- 평점 유도

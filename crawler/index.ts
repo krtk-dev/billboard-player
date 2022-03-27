@@ -9,7 +9,10 @@ import path from 'path';
 dotenv.config();
 
 // -------------------- Types -------------------- //
-
+interface SaveData {
+  date: string;
+  data: Data[];
+}
 interface Data {
   name: string;
   artist: string;
@@ -88,30 +91,19 @@ export const youtubeSearch = async (q: string): Promise<YoutubeData> => {
   }
 };
 
-export const save = (data: BillboardData[]) => {
-  const fileName = dayjs().format('YYYY-MM-DD') + '.json';
-  const filePath = path.join(__dirname, '../data', fileName);
-  fs.writeFileSync(filePath, JSON.stringify(data), 'utf-8');
-};
-
 // -------------------- Main -------------------- //
 
 (async () => {
   // data crawling from billboard
   const crawlingData = await billboardCrawling();
   // get youtube id & image from cache
-  const files = fs.readdirSync(path.join(__dirname, '../data'));
-  const recentDataFileName = files.sort().reverse()[0];
-  const recentData: Data[] = JSON.parse(
-    fs.readFileSync(
-      path.join(__dirname, '../data', recentDataFileName),
-      'utf-8',
-    ),
+  const recentData: SaveData = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '../data', 'recent.json'), 'utf-8'),
   );
 
   const data = await Promise.all(
     crawlingData.map(async v => {
-      const cache = recentData.find(
+      const cache = recentData.data.find(
         ({artist, name, youtube_id}) =>
           artist === v.artist && name === v.name && !!youtube_id,
       );
@@ -129,5 +121,17 @@ export const save = (data: BillboardData[]) => {
       }
     }),
   );
-  save(data);
+  // Save old data
+  fs.writeFileSync(
+    path.join(__dirname, '../data', recentData.date + '.json'),
+    JSON.stringify(recentData),
+    'utf-8',
+  );
+  // Save new Data
+  const date = dayjs().format('YYYY-MM-DD');
+  fs.writeFileSync(
+    path.join(__dirname, '../data', 'recent.json'),
+    JSON.stringify({date, data}),
+    'utf-8',
+  );
 })();

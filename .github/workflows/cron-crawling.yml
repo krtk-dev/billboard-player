@@ -1,9 +1,13 @@
 name: Cron Crawling
 
+# on:
+#   schedule:
+#     # every thursday 6:30
+#     - cron: '30 6 * * 4'
 on:
-  schedule:
-    # every thursday 6:30
-    - cron: '30 6 * * 4'
+  push:
+    branches: 
+      - main
 
 jobs:
   cron:
@@ -13,9 +17,11 @@ jobs:
         node: ["16"]
     name: Node ${{ matrix.node }} (${{ matrix.platform }})
     runs-on: ${{ matrix.platform }}
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
     defaults:
       run:
-        working-directory: functions
+        working-directory: crawler
 
     steps:
       - uses: actions/checkout@v2
@@ -23,8 +29,12 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      
+      - name: Install modules
+        run: yarn
 
+      - name: Run crawling
+        run: yarn crawling
+      
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"

@@ -1,4 +1,4 @@
-name: CI Functions
+name: CI Crawling
 
 on:
   push:

@@ -1,8 +1,9 @@
 import fs from 'fs';
-import os from 'os';
 import dotenv from 'dotenv';
 import axios from 'axios';
 import cheerio from 'cheerio';
+import dayjs from 'dayjs';
+import path from 'path';
 // -------------------- Setup -------------------- //
 
 dotenv.config();
@@ -66,27 +67,67 @@ export const billboardCrawling = async (): Promise<BillboardData[]> => {
 };
 
 export const youtubeSearch = async (q: string): Promise<YoutubeData> => {
-  const response = await axios.get(
-    'https://www.googleapis.com/youtube/v3/search',
-    {
-      params: {
-        key: process.env.YOUTUBE_API_KEY,
-        part: 'snippet',
-        q,
-        maxResults: 1,
+  try {
+    const response = await axios.get(
+      'https://www.googleapis.com/youtube/v3/search',
+      {
+        params: {
+          key: process.env.YOUTUBE_API_KEY,
+          part: 'snippet',
+          q,
+          maxResults: 1,
+        },
       },
-    },
-  );
-  return {
-    image: response.data.items[0].snippet.thumbnails.medium.url,
-    youtube_id: response.data.items[0].id.videoId,
-  };
+    );
+    return {
+      image: response.data.items[0].snippet.thumbnails.medium.url,
+      youtube_id: response.data.items[0].id.videoId,
+    };
+  } catch (error) {
+    return {image: '', youtube_id: ''};
+  }
 };
 
-// export const save = () => {};
+export const save = (data: BillboardData[]) => {
+  const fileName = dayjs().format('YYYY-MM-DD') + '.json';
+  const filePath = path.join(__dirname, '../data', fileName);
+  fs.writeFileSync(filePath, JSON.stringify(data), 'utf-8');
+};
 
 // -------------------- Main -------------------- //
 
 (async () => {
-  console.log(await billboardCrawling());
+  // data crawling from billboard
+  const crawlingData = await billboardCrawling();
+  // get youtube id & image from cache
+  const files = fs.readdirSync(path.join(__dirname, '../data'));
+  const recentDataFileName = files.sort().reverse()[0];
+  const recentData: Data[] = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, '../data', recentDataFileName),
+      'utf-8',
+    ),
+  );
+
+  const data = await Promise.all(
+    crawlingData.map(async v => {
+      const cache = recentData.find(
+        ({artist, name, youtube_id}) =>
+          artist === v.artist && name === v.name && !!youtube_id,
+      );
+      if (cache) {
+        return {
+          ...cache,
+          ...v,
+        };
+      } else {
+        const youtubeData = await youtubeSearch(`${v.artist} ${v.name}`);
+        return {
+          ...v,
+          ...youtubeData,
+        };
+      }
+    }),
+  );
+  save(data);
 })();

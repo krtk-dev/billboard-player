@@ -4,7 +4,7 @@
 			"path": "app"
 		},
 		{
-			"path": "functions"
+			"path": "crawler"
 		}
 	],
 	"settings": {}

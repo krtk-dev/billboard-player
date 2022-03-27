@@ -1,13 +1,9 @@
 name: Cron Crawling
 
-# on:
-#   schedule:
-#     # every thursday 6:30
-#     - cron: '30 6 * * 4'
 on:
-  push:
-    branches: 
-      - main
+  schedule:
+    # every thursday 6:30
+    - cron: '30 6 * * 4'
 
 jobs:
   cron:

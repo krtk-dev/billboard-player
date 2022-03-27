@@ -15,7 +15,7 @@
   },
   "compileOnSave": true,
   "include": [
-    "index.ts"
+    "./**/*.ts"
   ],
   "exclude": [
     ".eslintrc.js",

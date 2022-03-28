@@ -276,8 +276,6 @@ PODS:
     - React
   - react-native-safe-area-context (3.4.1):
     - React-Core
-  - react-native-webview (11.17.2):
-    - React-Core
   - React-perflogger (0.67.2)
   - React-RCTActionSheet (0.67.2):
     - React-Core/RCTActionSheetHeaders (= 0.67.2)
@@ -426,7 +424,6 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-in-app-review (from `../node_modules/react-native-in-app-review`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
-  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -501,8 +498,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-in-app-review"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
-  react-native-webview:
-    :path: "../node_modules/react-native-webview"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -571,7 +566,6 @@ SPEC CHECKSUMS:
   React-logger: 23de8ea0f44fa00ee77e96060273225607fd4d78
   react-native-in-app-review: 19f501795e776269dd216916e19e1ac4008b33d5
   react-native-safe-area-context: 9e40fb181dac02619414ba1294d6c2a807056ab9
-  react-native-webview: 380c1a03ec94b7ed764dac8db1e7c9952d08c93a
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db
   React-RCTActionSheet: 052606483045a408693aa7e864410b4a052f541a
   React-RCTAnimation: 08d4cac13222bb1348c687a0158dfd3b577cdb63

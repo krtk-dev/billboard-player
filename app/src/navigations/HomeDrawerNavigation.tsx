@@ -14,7 +14,7 @@ const HomeDrawerNavigation = () => {
       initialRouteName="Home"
       drawerContent={() => <HomeDrawerScreen />}
       screenOptions={{
-        drawerPosition: 'left',
+        drawerPosition: 'right',
         drawerType: 'front',
         headerShown: false,
       }}

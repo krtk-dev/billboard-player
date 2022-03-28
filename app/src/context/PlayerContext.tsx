@@ -16,6 +16,7 @@ export type PlayerContextType = {
   index: number;
   // method
   play: (index: number) => void;
+  next: () => void;
 };
 
 export const PlayerContext = createContext<PlayerContextType>({} as any);
@@ -37,14 +38,19 @@ const PlayerProvider: React.FC = ({children}) => {
     setIndex(_index);
   }, []);
 
+  const next = useCallback(() => {
+    setIndex(idx => (idx + 1) % 100);
+  }, []);
+
   const contextValue = useMemo<PlayerContextType>(
     () => ({
       data,
       date,
       index,
       play,
+      next,
     }),
-    [data, date, index, play],
+    [data, date, index, play, next],
   );
 
   return (

@@ -12,7 +12,7 @@ const Navigation = () => {
     <NavigationContainer
       theme={{
         ...DefaultTheme,
-        colors: {...DefaultTheme.colors, background: COLORS.white},
+        colors: {...DefaultTheme.colors, background: COLORS.dark_gray},
       }}
     >
       <RootStackNavigation />

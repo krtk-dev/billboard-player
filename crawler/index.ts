@@ -1,7 +1,6 @@
 import fs from 'fs';
 import dotenv from 'dotenv';
 import axios from 'axios';
-import cheerio from 'cheerio';
 import dayjs from 'dayjs';
 import path from 'path';
 // -------------------- Setup -------------------- //
@@ -23,51 +22,14 @@ interface Data {
   youtube_id: string;
   image: string;
 }
-type BillboardData = Omit<Data, 'youtube_id' | 'image'>;
-type YoutubeData = Pick<Data, 'youtube_id' | 'image'>;
+type BillboardData = Omit<Data, 'youtube_id'>;
+type YoutubeData = Pick<Data, 'youtube_id'>;
 
 // -------------------- Utils -------------------- //
 export const removeLineFeed = (str: string) =>
   str.replace(/\n/g, '').replace(/\t/g, '');
 
 // -------------------- Functions -------------------- //
-
-export const billboardCrawling = async (): Promise<BillboardData[]> => {
-  const res = await axios('https://www.billboard.com/charts/hot-100');
-
-  const $ = cheerio.load(res.data);
-
-  const data: BillboardData[] = [];
-  $('.o-chart-results-list-row-container').each((idx, elem) => {
-    const lastWeekRank = removeLineFeed(
-      $('.o-chart-results-list__item:nth-child(4) > span', elem).first().text(),
-    );
-
-    data.push({
-      name: removeLineFeed($(elem).find('h3#title-of-a-story').first().text()),
-      artist: removeLineFeed($(elem).find('h3 + span.c-label').text()),
-      rank: idx + 1,
-      last_week_rank: lastWeekRank === '-' ? null : Number(lastWeekRank),
-      peak_rank: Number(
-        removeLineFeed(
-          $(elem)
-            .find('.o-chart-results-list__item:nth-child(5) > span')
-            .first()
-            .text(),
-        ),
-      ),
-      weeks_on_chart: Number(
-        removeLineFeed(
-          $(elem)
-            .find('.o-chart-results-list__item:nth-child(6) > span')
-            .first()
-            .text(),
-        ),
-      ),
-    });
-  });
-  return data;
-};
 
 export const youtubeSearch = async (q: string): Promise<YoutubeData> => {
   try {
@@ -83,11 +45,11 @@ export const youtubeSearch = async (q: string): Promise<YoutubeData> => {
       },
     );
     return {
-      image: response.data.items[0].snippet.thumbnails.medium.url,
       youtube_id: response.data.items[0].id.videoId,
     };
   } catch (error) {
-    return {image: '', youtube_id: ''};
+    console.log(error);
+    return {youtube_id: ''};
   }
 };
 
@@ -95,7 +57,11 @@ export const youtubeSearch = async (q: string): Promise<YoutubeData> => {
 
 (async () => {
   // data crawling from billboard
-  const crawlingData = await billboardCrawling();
+  const {
+    data: {data: crawlingData},
+  } = await axios.get<{data: BillboardData[]}>(
+    'https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/hot100/recent.json',
+  );
   // get youtube id & image from cache
   const recentData: SaveData = JSON.parse(
     fs.readFileSync(path.join(__dirname, '../data', 'recent.json'), 'utf-8'),

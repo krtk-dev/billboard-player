@@ -8,16 +8,10 @@ export const STATUSBAR_HEIGHT = getStatusBarHeight();
 export const COLORS = {
   white: '#FFF',
   black: '#000',
-};
-
-export const SHADOW = {
-  shadowColor: '#000',
-  shadowOffset: {
-    width: 0,
-    height: 2,
-  },
-  shadowOpacity: 0.23,
-  shadowRadius: 2.62,
-
-  elevation: 4,
+  gray: '#333',
+  light_gray: '#888',
+  dark_gray: '#222',
+  blue: '#1A73E8',
+  red: '#E44034',
+  yellow: '#FABC05',
 };

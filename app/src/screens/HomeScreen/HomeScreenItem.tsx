@@ -1,15 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import HomeScreenHeader from './HomeScreenHeader';
 
-const HomeScreen = () => {
+const HomeScreenItem = () => {
   return (
     <View>
-      <HomeScreenHeader />
+      <Text>HomeScreenItem</Text>
     </View>
   );
 };
 
-export default HomeScreen;
+export default HomeScreenItem;
 
 const styles = StyleSheet.create({});

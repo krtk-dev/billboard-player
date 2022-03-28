@@ -16,6 +16,7 @@ const HomeScreen = () => {
       <FlatList
         data={data}
         overScrollMode="never"
+        keyExtractor={({artist, name}) => artist + name}
         renderItem={({item, index}) => (
           <HomeScreenItem {...item} index={index} />
         )}

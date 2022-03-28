@@ -43,7 +43,7 @@ const HomeDrawerScreen = () => {
   return (
     <View style={[styles.container, {paddingBottom: bottom + 16}]}>
       {MENUS.map(({icon, onPress, title}) => (
-        <BaseButton style={styles.itemContainer} onPress={onPress}>
+        <BaseButton key={title} style={styles.itemContainer} onPress={onPress}>
           <Icon name={icon} color={COLORS.white} size={24} />
           <Typography style={styles.itemTitle}>{title}</Typography>
         </BaseButton>

@@ -61,7 +61,7 @@ export default HomeDrawerScreen;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.gray,
+    backgroundColor: COLORS.dark_gray,
     flex: 1,
     paddingTop: 56 + STATUSBAR_HEIGHT,
   },

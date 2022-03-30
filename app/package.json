@@ -28,6 +28,7 @@
     "oss": "npx license-checker --json --out ./src/assets/oss.json"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.1",
     "@react-navigation/drawer": "^6.3.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/stack": "^6.1.1",
@@ -40,6 +41,7 @@
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.11.1",
     "react-native-status-bar-height": "^2.6.0",
+    "react-native-use-persisted-state": "^1.0.1",
     "react-native-vector-icons": "^9.1.0",
     "react-native-webview": "^11.17.2",
     "react-native-youtube-iframe": "^2.2.2"

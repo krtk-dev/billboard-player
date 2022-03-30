@@ -7,7 +7,7 @@
 ![Typescript](https://img.shields.io/badge/Typescript-222222?style=for-the-badge&logo=Typescript&logoColor=#3178C6)
 ![ReactNative](https://img.shields.io/badge/ReactNative-222222?style=for-the-badge&logo=React&logoColor=#61DAFB)
 
-<!-- <img width="300" src="https://user-images.githubusercontent.com/48207131/154833198-8823ffe7-294d-4c11-a63a-c7209e5aece1.gif"> -->
+<img width="300" src="https://user-images.githubusercontent.com/48207131/160365007-8a1791ea-cb60-478e-b965-5e1ac7069a82.gif">
 
 ### Introduction
 
@@ -16,7 +16,7 @@
 ### Product
 - App
 
-  <!-- <a href=""><img src="https://user-images.githubusercontent.com/27461460/77502559-8c8a8d80-6e9e-11ea-9f8e-0f58c704eed6.png" width="200"/></a>  -->
+  <a href="https://apps.apple.com/app/id1616465259"><img src="https://user-images.githubusercontent.com/27461460/77502559-8c8a8d80-6e9e-11ea-9f8e-0f58c704eed6.png" width="200"/></a>
   <a href="https://play.google.com/store/apps/details?id=com.koreanthinker.billboard"><img src="https://user-images.githubusercontent.com/27461460/77502571-90b6ab00-6e9e-11ea-9e93-235a319ebb41.png" width="200"/></a>
 
 - Web

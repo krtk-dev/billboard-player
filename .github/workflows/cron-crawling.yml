@@ -2,8 +2,8 @@ name: Cron Crawling
 
 on:
   schedule:
-    # every thursday 6:30
-    - cron: '30 6 * * 4'
+    # every tuesday 6:30
+    - cron: '30 9 * * 2'
 
 jobs:
   cron:

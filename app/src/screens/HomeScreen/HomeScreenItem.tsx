@@ -7,14 +7,24 @@ import BaseButton from '../../components/BaseButton';
 import Typography from '../../components/Typography';
 import {COLORS} from '../../constants/styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {PlaylistContext} from '../../context/PlaylistContext';
+import trackDataCompare from '../../util/trackDataCompare';
 
-const HomeScreenItem: React.FC<TrackData & {index: number}> = props => {
-  const {index: _index, play} = useContext(PlayerContext);
-  const {artist, image, index, last_week_rank, name, rank} = props;
-  const isFocused = _index === index;
+interface HomeScreenItemProps {
+  data: TrackData;
+  index: number;
+}
+
+const HomeScreenItem: React.FC<HomeScreenItemProps> = props => {
+  const {index: currentIndex, play} = useContext(PlayerContext);
+  const {toggle, playlist} = useContext(PlaylistContext);
+  const {data, index} = props;
+  const {artist, last_week_rank, name, rank} = data;
   const isNew = !last_week_rank;
   const rankDelta = last_week_rank ? rank - last_week_rank : 0;
   const isUp = rankDelta > 0;
+  const isAdded = !!playlist.find(_data => trackDataCompare(_data, data));
+  const isFocused = index === currentIndex;
 
   return (
     <BaseButton
@@ -58,7 +68,13 @@ const HomeScreenItem: React.FC<TrackData & {index: number}> = props => {
           {artist}
         </Typography>
       </View>
-      <Image style={styles.image} source={{uri: image}} />
+      <BaseButton onPress={() => toggle(data)} style={styles.addButton}>
+        <Icon
+          name={isAdded ? 'heart' : 'heart-outline'}
+          size={24}
+          color={COLORS.white}
+        />
+      </BaseButton>
     </BaseButton>
   );
 };
@@ -113,8 +129,10 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 8,
   },
-  image: {
-    width: 80,
-    height: 80,
+  addButton: {
+    height: '100%',
+    width: 54,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

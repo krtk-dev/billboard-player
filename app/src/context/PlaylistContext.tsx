@@ -1,20 +1,13 @@
-import axios from 'axios';
-import React, {
-  createContext,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import React, {createContext, useCallback, useMemo} from 'react';
 import {usePersistedState} from 'react-native-use-persisted-state';
 import {TrackData} from '../constants/types';
+import trackDataCompare from '../util/trackDataCompare';
 
 export type PlaylistContextType = {
   // state
-  playlist?: TrackData[];
+  playlist: TrackData[];
   // method
-  add: (data: TrackData) => void;
-  remove: (data: TrackData) => void;
+  toggle: (data: TrackData) => void;
 };
 
 export const PlaylistContext = createContext<PlaylistContextType>({} as any);
@@ -25,26 +18,13 @@ const PlaylistProvider: React.FC = ({children}) => {
     [],
   );
 
-  const add = useCallback(
+  const toggle = useCallback(
     (data: TrackData) => {
-      if (
-        playlist.find(
-          ({name, artist}) => name === data.name && artist === data.artist,
-        )
-      )
-        return;
-      setPlaylist([data, ...playlist]);
-    },
-    [playlist, setPlaylist],
-  );
-
-  const remove = useCallback(
-    (data: TrackData) => {
-      setPlaylist(
-        playlist.filter(
-          ({artist, name}) => !(name === data.name && artist === data.artist),
-        ),
-      );
+      if (playlist.find(_data => trackDataCompare(_data, data))) {
+        setPlaylist(playlist.filter(_data => !trackDataCompare(_data, data)));
+      } else {
+        setPlaylist([data, ...playlist]);
+      }
     },
     [playlist, setPlaylist],
   );
@@ -52,10 +32,9 @@ const PlaylistProvider: React.FC = ({children}) => {
   const contextValue = useMemo<PlaylistContextType>(
     () => ({
       playlist,
-      add,
-      remove,
+      toggle,
     }),
-    [playlist, add, remove],
+    [playlist, toggle],
   );
 
   return (

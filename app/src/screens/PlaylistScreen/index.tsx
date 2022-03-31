@@ -1,30 +1,29 @@
 import {FlatList, StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
-import HomeScreenHeader from './HomeScreenHeader';
-import {useContext} from 'react';
-import {ChartContext} from '../../context/ChartContext';
-import HomeScreenItem from './HomeScreenItem';
+import React, {useContext, useState} from 'react';
+import BaseHeader from '../../components/BaseHeader';
 import Player from '../../components/Player';
+import {PlaylistContext} from '../../context/PlaylistContext';
+import PlaylistItem from './PlaylistItem';
 
-const HomeScreen = () => {
-  const {data} = useContext(ChartContext);
+const PlaylistScreen = () => {
+  const {playlist} = useContext(PlaylistContext);
   const [index, setIndex] = useState(0);
 
   return (
     <View>
-      <HomeScreenHeader />
-      {data && (
+      <BaseHeader title="Playlist" />
+      {playlist.length && (
         <Player
-          videoId={data[index].youtube_id}
-          onEnded={() => setIndex(idx => (idx + 1) % data.length)}
+          videoId={playlist[index].youtube_id}
+          onEnded={() => setIndex(idx => (idx + 1) % playlist.length)}
         />
       )}
       <FlatList
-        data={data}
+        data={playlist}
         overScrollMode="never"
         keyExtractor={({artist, name}) => artist + name}
         renderItem={({item, index: _index}) => (
-          <HomeScreenItem
+          <PlaylistItem
             data={item}
             isFocused={index === _index}
             onPress={() => setIndex(_index)}
@@ -36,6 +35,6 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default PlaylistScreen;
 
 const styles = StyleSheet.create({});

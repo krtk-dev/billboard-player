@@ -10,11 +10,11 @@ import {
 } from '../../constants/values';
 import BaseButton from '../../components/BaseButton';
 import Typography from '../../components/Typography';
-import {PlayerContext} from '../../context/PlayerContext';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {ChartContext} from '../../context/ChartContext';
 
 const HomeDrawerScreen = () => {
-  const {date} = useContext(PlayerContext);
+  const {date} = useContext(ChartContext);
   const {bottom} = useSafeAreaInsets();
 
   const MENUS = [
@@ -61,7 +61,7 @@ export default HomeDrawerScreen;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.gray,
+    backgroundColor: COLORS.dark_gray,
     flex: 1,
     paddingTop: 56 + STATUSBAR_HEIGHT,
   },

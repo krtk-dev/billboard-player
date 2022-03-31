@@ -1,25 +1,29 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import {COLORS, STATUSBAR_HEIGHT} from '../../constants/styles';
-import Typography from '../../components/Typography';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import BorderlessButton from '../../components/BorderlessButton';
-import useNavigation from '../../hooks/useNavigation';
+import useNavigation from '../hooks/useNavigation';
+import BorderlessButton from './BorderlessButton';
+import Typography from './Typography';
+import {COLORS, STATUSBAR_HEIGHT} from '../constants/styles';
 
-const PlaylistScreenHeader = () => {
+interface BaseHeaderProps {
+  title?: string;
+}
+
+const BaseHeader: React.FC<BaseHeaderProps> = ({title}) => {
   const {goBack} = useNavigation();
 
   return (
     <View style={styles.container}>
-      <BorderlessButton onPress={goBack} style={styles.drawerButton}>
+      <BorderlessButton onPress={goBack} style={styles.backButton}>
         <Icon size={24} color={COLORS.white} name="chevron-left" />
       </BorderlessButton>
-      <Typography style={styles.title}>Billboard Player</Typography>
+      <Typography style={styles.title}>{title}</Typography>
     </View>
   );
 };
 
-export default PlaylistScreenHeader;
+export default BaseHeader;
 
 const styles = StyleSheet.create({
   container: {
@@ -31,10 +35,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    marginLeft: 16,
     fontWeight: 'bold',
   },
-  drawerButton: {
+  backButton: {
     width: 56,
     height: 56,
     alignItems: 'center',

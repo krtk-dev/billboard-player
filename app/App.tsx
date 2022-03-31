@@ -4,7 +4,7 @@ import Navigation from './src/navigations';
 import {LogBox} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {COLORS} from './src/constants/styles';
-import PlayerProvider from './src/context/PlayerContext';
+import ChartProvider from './src/context/ChartContext';
 import {PersistedStateProvider} from 'react-native-use-persisted-state';
 import PlaylistProvider from './src/context/PlaylistContext';
 
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <PersistedStateProvider>
       <PlaylistProvider>
-        <PlayerProvider>
+        <ChartProvider>
           <SafeAreaProvider>
             <View style={{backgroundColor: COLORS.black, flex: 1}}>
               <StatusBar
@@ -28,7 +28,7 @@ const App = () => {
               <Navigation />
             </View>
           </SafeAreaProvider>
-        </PlayerProvider>
+        </ChartProvider>
       </PlaylistProvider>
     </PersistedStateProvider>
   );

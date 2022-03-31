@@ -2,33 +2,32 @@ import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {TrackData} from '../../constants/types';
 import {useContext} from 'react';
-import {PlayerContext} from '../../context/PlayerContext';
 import BaseButton from '../../components/BaseButton';
 import Typography from '../../components/Typography';
 import {COLORS} from '../../constants/styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {PlaylistContext} from '../../context/PlaylistContext';
 import trackDataCompare from '../../util/trackDataCompare';
+import {ChartContext} from '../../context/ChartContext';
 
 interface HomeScreenItemProps {
   data: TrackData;
-  index: number;
+  isFocused: boolean;
+  onPress: () => void;
 }
 
 const HomeScreenItem: React.FC<HomeScreenItemProps> = props => {
-  const {index: currentIndex, play} = useContext(PlayerContext);
+  const {data, isFocused, onPress} = props;
   const {toggle, playlist} = useContext(PlaylistContext);
-  const {data, index} = props;
   const {artist, last_week_rank, name, rank} = data;
   const isNew = !last_week_rank;
   const rankDelta = last_week_rank ? rank - last_week_rank : 0;
   const isUp = rankDelta > 0;
   const isAdded = !!playlist.find(_data => trackDataCompare(_data, data));
-  const isFocused = index === currentIndex;
 
   return (
     <BaseButton
-      onPress={() => play(index)}
+      onPress={onPress}
       style={[
         styles.container,
         {backgroundColor: isFocused ? COLORS.gray : undefined},

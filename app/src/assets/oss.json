@@ -1,5 +1,5 @@
 {
-  "@ampproject/remapping@2.1.1": {
+  "@ampproject/remapping@2.1.2": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/ampproject/remapping",
     "publisher": "Justin Ridgewell",
@@ -23,7 +23,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/code-frame",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/code-frame/LICENSE"
   },
-  "@babel/compat-data@7.17.0": {
+  "@babel/compat-data@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -31,7 +31,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/compat-data",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/compat-data/LICENSE"
   },
-  "@babel/core@7.17.2": {
+  "@babel/core@7.17.8": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -39,7 +39,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/core",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/core/LICENSE"
   },
-  "@babel/generator@7.17.0": {
+  "@babel/generator@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -63,7 +63,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-builder-binary-assignment-operator-visitor",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/LICENSE"
   },
-  "@babel/helper-compilation-targets@7.16.7": {
+  "@babel/helper-compilation-targets@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -71,7 +71,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-compilation-targets",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-compilation-targets/LICENSE"
   },
-  "@babel/helper-create-class-features-plugin@7.17.1": {
+  "@babel/helper-create-class-features-plugin@7.17.6": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -133,7 +133,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-hoist-variables",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-hoist-variables/LICENSE"
   },
-  "@babel/helper-member-expression-to-functions@7.16.7": {
+  "@babel/helper-member-expression-to-functions@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -149,7 +149,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-module-imports",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-module-imports/LICENSE"
   },
-  "@babel/helper-module-transforms@7.16.7": {
+  "@babel/helper-module-transforms@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -189,7 +189,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-replace-supers",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-replace-supers/LICENSE"
   },
-  "@babel/helper-simple-access@7.16.7": {
+  "@babel/helper-simple-access@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -237,7 +237,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-wrap-function",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/helper-wrap-function/LICENSE"
   },
-  "@babel/helpers@7.17.2": {
+  "@babel/helpers@7.17.8": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -253,7 +253,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/highlight",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/highlight/LICENSE"
   },
-  "@babel/parser@7.17.0": {
+  "@babel/parser@7.17.8": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -285,7 +285,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-proposal-nullish-coalescing-operator",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/LICENSE"
   },
-  "@babel/plugin-proposal-object-rest-spread@7.16.7": {
+  "@babel/plugin-proposal-object-rest-spread@7.17.3": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -469,7 +469,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-transform-computed-properties",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-transform-computed-properties/LICENSE"
   },
-  "@babel/plugin-transform-destructuring@7.16.7": {
+  "@babel/plugin-transform-destructuring@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -525,7 +525,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-transform-member-expression-literals",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-transform-member-expression-literals/LICENSE"
   },
-  "@babel/plugin-transform-modules-commonjs@7.16.8": {
+  "@babel/plugin-transform-modules-commonjs@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -589,7 +589,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-transform-react-jsx-source",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/plugin-transform-react-jsx-source/LICENSE"
   },
-  "@babel/plugin-transform-react-jsx@7.16.7": {
+  "@babel/plugin-transform-react-jsx@7.17.3": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -677,7 +677,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/preset-typescript",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/preset-typescript/LICENSE"
   },
-  "@babel/register@7.17.0": {
+  "@babel/register@7.17.7": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -685,7 +685,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/register",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/register/LICENSE"
   },
-  "@babel/runtime@7.17.2": {
+  "@babel/runtime@7.17.8": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -701,7 +701,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/template",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@babel/template/LICENSE"
   },
-  "@babel/traverse@7.17.0": {
+  "@babel/traverse@7.17.3": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
     "publisher": "The Babel Team",
@@ -905,7 +905,15 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@nodelib/fs.walk",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@nodelib/fs.walk/LICENSE"
   },
-  "@react-native-community/cli-debugger-ui@6.0.0-rc.0": {
+  "@react-native-async-storage/async-storage@1.17.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/react-native-async-storage/async-storage",
+    "publisher": "Krzysztof Borowy",
+    "email": "hello@krizzu.dev",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-async-storage/async-storage",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-async-storage/async-storage/LICENSE"
+  },
+  "@react-native-community/cli-debugger-ui@6.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/react-native-community/cli",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/cli-debugger-ui",
@@ -935,11 +943,10 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/cli-plugin-metro",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/cli-plugin-metro/LICENSE"
   },
-  "@react-native-community/cli-server-api@6.4.0": {
+  "@react-native-community/cli-server-api@6.4.3": {
     "licenses": "MIT",
     "repository": "https://github.com/react-native-community/cli",
-    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/cli-server-api",
-    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/cli-server-api/LICENSE"
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/cli-server-api"
   },
   "@react-native-community/cli-tools@6.2.0": {
     "licenses": "MIT",
@@ -992,7 +999,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-navigation/core",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-navigation/core/LICENSE"
   },
-  "@react-navigation/drawer@6.3.1": {
+  "@react-navigation/drawer@6.3.2": {
     "licenses": "MIT",
     "repository": "https://github.com/react-navigation/react-navigation",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-navigation/drawer",
@@ -1022,7 +1029,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-navigation/stack",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-navigation/stack/LICENSE"
   },
-  "@sideway/address@4.1.3": {
+  "@sideway/address@4.1.4": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/sideway/address",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@sideway/address",
@@ -1061,7 +1068,7 @@
     "url": "http://n8.io/",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@tootallnate/once"
   },
-  "@types/babel__core@7.1.18": {
+  "@types/babel__core@7.1.19": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/babel__core",
@@ -1133,13 +1140,13 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/jest",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/jest/LICENSE"
   },
-  "@types/json-schema@7.0.9": {
+  "@types/json-schema@7.0.11": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/json-schema",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/json-schema/LICENSE"
   },
-  "@types/node@17.0.18": {
+  "@types/node@17.0.23": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/node",
@@ -1169,11 +1176,17 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-native-vector-icons",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-native-vector-icons/LICENSE"
   },
-  "@types/react-native@0.66.15": {
+  "@types/react-native@0.66.17": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-native",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-native/LICENSE"
+  },
+  "@types/react-native@0.67.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-native-vector-icons/node_modules/@types/react-native",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-native-vector-icons/node_modules/@types/react-native/LICENSE"
   },
   "@types/react-test-renderer@17.0.1": {
     "licenses": "MIT",
@@ -1181,7 +1194,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-test-renderer",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react-test-renderer/LICENSE"
   },
-  "@types/react@17.0.39": {
+  "@types/react@17.0.43": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/react",
@@ -1199,7 +1212,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/stack-utils",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/stack-utils/LICENSE"
   },
-  "@types/yargs-parser@20.2.1": {
+  "@types/yargs-parser@21.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@types/yargs-parser",
@@ -1223,7 +1236,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/eslint-config/node_modules/@typescript-eslint/eslint-plugin",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/eslint-config/node_modules/@typescript-eslint/eslint-plugin/LICENSE"
   },
-  "@typescript-eslint/eslint-plugin@5.12.0": {
+  "@typescript-eslint/eslint-plugin@5.16.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/eslint-plugin",
@@ -1241,19 +1254,19 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/eslint-config/node_modules/@typescript-eslint/parser",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@react-native-community/eslint-config/node_modules/@typescript-eslint/parser/LICENSE"
   },
-  "@typescript-eslint/parser@5.12.0": {
+  "@typescript-eslint/parser@5.16.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/parser",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/parser/LICENSE"
   },
-  "@typescript-eslint/scope-manager@5.12.0": {
+  "@typescript-eslint/scope-manager@5.16.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/scope-manager",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/scope-manager/LICENSE"
   },
-  "@typescript-eslint/type-utils@5.12.0": {
+  "@typescript-eslint/type-utils@5.16.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/type-utils",
@@ -1265,7 +1278,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/experimental-utils/node_modules/@typescript-eslint/types",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/experimental-utils/node_modules/@typescript-eslint/types/LICENSE"
   },
-  "@typescript-eslint/types@5.12.0": {
+  "@typescript-eslint/types@5.16.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/types",
@@ -1277,13 +1290,13 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/typescript-estree",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/typescript-estree/LICENSE"
   },
-  "@typescript-eslint/typescript-estree@5.12.0": {
+  "@typescript-eslint/typescript-estree@5.16.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/typescript-estree",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/utils/node_modules/@typescript-eslint/typescript-estree/LICENSE"
   },
-  "@typescript-eslint/utils@5.12.0": {
+  "@typescript-eslint/utils@5.16.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/utils",
@@ -1295,7 +1308,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/visitor-keys",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/visitor-keys/LICENSE"
   },
-  "@typescript-eslint/visitor-keys@5.12.0": {
+  "@typescript-eslint/visitor-keys@5.16.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/@typescript-eslint/visitor-keys",
@@ -1385,7 +1398,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/ajv",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/ajv/LICENSE"
   },
-  "ajv@8.10.0": {
+  "ajv@8.11.0": {
     "licenses": "MIT",
     "repository": "https://github.com/ajv-validator/ajv",
     "publisher": "Evgeny Poberezkin",
@@ -1426,7 +1439,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/ansi-fragments",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/ansi-fragments/README.md"
   },
-  "ansi-regex@4.1.0": {
+  "ansi-regex@4.1.1": {
     "licenses": "MIT",
     "repository": "https://github.com/chalk/ansi-regex",
     "publisher": "Sindre Sorhus",
@@ -1478,7 +1491,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/anymatch",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/anymatch/LICENSE"
   },
-  "app@2.0.0": {
+  "app@2.1.0": {
     "licenses": "UNLICENSED",
     "private": true,
     "path": "/Users/hyun/Github/krtk/billboard-player/app"
@@ -1652,6 +1665,13 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/atob",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/atob/LICENSE"
   },
+  "axios@0.26.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/axios/axios",
+    "publisher": "Matt Zabriskie",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/axios",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/axios/LICENSE"
+  },
   "babel-core@7.0.0-bridge.0": {
     "licenses": "MIT",
     "publisher": "Logan Smyth",
@@ -1818,7 +1838,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/browser-process-hrtime",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/browser-process-hrtime/LICENSE"
   },
-  "browserslist@4.19.1": {
+  "browserslist@4.20.2": {
     "licenses": "MIT",
     "repository": "https://github.com/browserslist/browserslist",
     "publisher": "Andrey Sitnik",
@@ -1920,7 +1940,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/jest-validate/node_modules/camelcase",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/jest-validate/node_modules/camelcase/license"
   },
-  "caniuse-lite@1.0.30001312": {
+  "caniuse-lite@1.0.30001320": {
     "licenses": "CC-BY-4.0",
     "repository": "https://github.com/browserslist/caniuse-lite",
     "publisher": "Ben Briggs",
@@ -2237,7 +2257,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/copy-descriptor",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/copy-descriptor/LICENSE"
   },
-  "core-js-compat@3.21.0": {
+  "core-js-compat@3.21.1": {
     "licenses": "MIT",
     "repository": "https://github.com/zloirock/core-js",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/core-js-compat",
@@ -2298,7 +2318,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/cssstyle",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/cssstyle/LICENSE"
   },
-  "csstype@3.0.10": {
+  "csstype@3.0.11": {
     "licenses": "MIT",
     "repository": "https://github.com/frenic/csstype",
     "publisher": "Fredrik Nicol",
@@ -2315,7 +2335,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/data-urls",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/data-urls/LICENSE.txt"
   },
-  "dayjs@1.10.7": {
+  "dayjs@1.11.0": {
     "licenses": "MIT",
     "repository": "https://github.com/iamkun/dayjs",
     "publisher": "iamkun",
@@ -2330,7 +2350,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/send/node_modules/debug",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/send/node_modules/debug/LICENSE"
   },
-  "debug@4.3.3": {
+  "debug@4.3.4": {
     "licenses": "MIT",
     "repository": "https://github.com/debug-js/debug",
     "publisher": "Josh Junon",
@@ -2440,7 +2460,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/denodeify",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/denodeify/README.md"
   },
-  "depd@1.1.2": {
+  "depd@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/dougwilson/nodejs-depd",
     "publisher": "Douglas Christopher Wilson",
@@ -2448,7 +2468,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/depd",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/depd/LICENSE"
   },
-  "destroy@1.0.4": {
+  "destroy@1.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/stream-utils/destroy",
     "publisher": "Jonathan Ong",
@@ -2535,7 +2555,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/ee-first",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/ee-first/LICENSE"
   },
-  "electron-to-chromium@1.4.70": {
+  "electron-to-chromium@1.4.94": {
     "licenses": "ISC",
     "repository": "https://github.com/kilian/electron-to-chromium",
     "publisher": "Kilian Valkhof",
@@ -2653,8 +2673,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/stack-utils/node_modules/escape-string-regexp",
-    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/stack-utils/node_modules/escape-string-regexp/license"
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-webview/node_modules/escape-string-regexp",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-webview/node_modules/escape-string-regexp/license"
   },
   "escape-string-regexp@4.0.0": {
     "licenses": "MIT",
@@ -2733,7 +2753,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/eslint-plugin-react-native",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/eslint-plugin-react-native/LICENSE"
   },
-  "eslint-plugin-react@7.28.0": {
+  "eslint-plugin-react@7.29.4": {
     "licenses": "MIT",
     "repository": "https://github.com/yannickcr/eslint-plugin-react",
     "publisher": "Yannick Croissant",
@@ -2853,6 +2873,15 @@
     "publisher": "Toru Nagashima",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/event-target-shim",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/event-target-shim/LICENSE"
+  },
+  "events@3.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Gozala/events",
+    "publisher": "Irakli Gozalishvili",
+    "email": "rfobic@gmail.com",
+    "url": "http://jeditoolkit.com",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/events",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/events/LICENSE"
   },
   "exec-sh@0.3.6": {
     "licenses": "MIT",
@@ -3072,13 +3101,22 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/flow-parser",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/flow-parser/README.md"
   },
-  "flow-parser@0.171.0": {
+  "flow-parser@0.174.1": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/flow",
     "publisher": "Flow Team",
     "email": "flow@fb.com",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/jscodeshift/node_modules/flow-parser",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/jscodeshift/node_modules/flow-parser/README.md"
+  },
+  "follow-redirects@1.14.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/follow-redirects/follow-redirects",
+    "publisher": "Ruben Verborgh",
+    "email": "ruben@verborgh.org",
+    "url": "https://ruben.verborgh.org/",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/follow-redirects",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/follow-redirects/LICENSE"
   },
   "for-in@1.0.2": {
     "licenses": "MIT",
@@ -3260,7 +3298,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/globals",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/globals/license"
   },
-  "globals@13.12.1": {
+  "globals@13.13.0": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/globals",
     "publisher": "Sindre Sorhus",
@@ -3319,7 +3357,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/has-flag",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/has-flag/license"
   },
-  "has-symbols@1.0.2": {
+  "has-symbols@1.0.3": {
     "licenses": "MIT",
     "repository": "https://github.com/inspect-js/has-symbols",
     "publisher": "Jordan Harband",
@@ -3431,7 +3469,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/html-escaper",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/html-escaper/LICENSE.txt"
   },
-  "http-errors@1.8.1": {
+  "http-errors@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/jshttp/http-errors",
     "publisher": "Jonathan Ong",
@@ -3811,6 +3849,15 @@
     "url": "https://github.com/jonschlinkert",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/to-regex-range/node_modules/is-number",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/to-regex-range/node_modules/is-number/LICENSE"
+  },
+  "is-plain-obj@2.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/is-plain-obj",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/is-plain-obj",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/is-plain-obj/license"
   },
   "is-plain-object@2.0.4": {
     "licenses": "MIT",
@@ -4285,7 +4332,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/json-stable-stringify-without-jsonify",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/json-stable-stringify-without-jsonify/LICENSE"
   },
-  "json5@2.2.0": {
+  "json5@2.2.1": {
     "licenses": "MIT",
     "repository": "https://github.com/json5/json5",
     "publisher": "Aseem Kishore",
@@ -4576,6 +4623,14 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/map-visit",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/map-visit/LICENSE"
   },
+  "merge-options@3.0.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/schnittstabil/merge-options",
+    "publisher": "Michael Mayer",
+    "email": "michael@schnittstabil.de",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/merge-options",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/merge-options/license"
+  },
   "merge-stream@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/grncdr/merge-stream",
@@ -4695,7 +4750,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/sane/node_modules/micromatch",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/sane/node_modules/micromatch/LICENSE"
   },
-  "micromatch@4.0.4": {
+  "micromatch@4.0.5": {
     "licenses": "MIT",
     "repository": "https://github.com/micromatch/micromatch",
     "publisher": "Jon Schlinkert",
@@ -4703,13 +4758,13 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/micromatch",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/micromatch/LICENSE"
   },
-  "mime-db@1.51.0": {
+  "mime-db@1.52.0": {
     "licenses": "MIT",
     "repository": "https://github.com/jshttp/mime-db",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mime-db",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mime-db/LICENSE"
   },
-  "mime-types@2.1.34": {
+  "mime-types@2.1.35": {
     "licenses": "MIT",
     "repository": "https://github.com/jshttp/mime-types",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mime-types",
@@ -4751,7 +4806,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mimic-fn",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mimic-fn/license"
   },
-  "minimatch@3.1.1": {
+  "minimatch@3.1.2": {
     "licenses": "ISC",
     "repository": "https://github.com/isaacs/minimatch",
     "publisher": "Isaac Z. Schlueter",
@@ -4760,7 +4815,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/minimatch",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/minimatch/LICENSE"
   },
-  "minimist@1.2.5": {
+  "minimist@1.2.6": {
     "licenses": "MIT",
     "repository": "https://github.com/substack/minimist",
     "publisher": "James Halliday",
@@ -4777,7 +4832,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mixin-deep",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mixin-deep/LICENSE"
   },
-  "mkdirp@0.5.5": {
+  "mkdirp@0.5.6": {
     "licenses": "MIT",
     "repository": "https://github.com/substack/node-mkdirp",
     "publisher": "James Halliday",
@@ -4785,14 +4840,6 @@
     "url": "http://substack.net",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mkdirp",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mkdirp/LICENSE"
-  },
-  "mockdate@3.0.5": {
-    "licenses": "MIT",
-    "repository": "https://github.com/boblauer/MockDate",
-    "publisher": "Bob Lauer",
-    "email": "rlauer@gmail.com",
-    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mockdate",
-    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/mockdate/LICENSE"
   },
   "ms@2.0.0": {
     "licenses": "MIT",
@@ -4812,7 +4859,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/send/node_modules/ms",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/send/node_modules/ms/license.md"
   },
-  "nanoid@3.3.0": {
+  "nanoid@3.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/ai/nanoid",
     "publisher": "Andrey Sitnik",
@@ -5075,6 +5122,12 @@
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/object.values/LICENSE"
   },
   "on-finished@2.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/on-finished",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/finalhandler/node_modules/on-finished",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/finalhandler/node_modules/on-finished/LICENSE"
+  },
+  "on-finished@2.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/jshttp/on-finished",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/on-finished",
@@ -5408,21 +5461,13 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/pkg-dir",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/pkg-dir/license"
   },
-  "plist@3.0.4": {
+  "plist@3.0.5": {
     "licenses": "MIT",
     "repository": "https://github.com/TooTallNate/node-plist",
     "publisher": "Nathan Rajlich",
     "email": "nathan@tootallnate.net",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/plist",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/plist/LICENSE"
-  },
-  "plist@3.0.5": {
-    "licenses": "MIT",
-    "repository": "https://github.com/TooTallNate/node-plist",
-    "publisher": "Nathan Rajlich",
-    "email": "nathan@tootallnate.net",
-    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-version/node_modules/plist",
-    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-version/node_modules/plist/LICENSE"
   },
   "posix-character-classes@0.1.1": {
     "licenses": "MIT",
@@ -5454,7 +5499,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/prettier-linter-helpers",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/prettier-linter-helpers/LICENSE.md"
   },
-  "prettier@2.5.1": {
+  "prettier@2.6.1": {
     "licenses": "MIT",
     "repository": "https://github.com/prettier/prettier",
     "publisher": "James Long",
@@ -5605,7 +5650,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-codegen",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-codegen/README.md"
   },
-  "react-native-gesture-handler@2.2.0": {
+  "react-native-gesture-handler@2.3.2": {
     "licenses": "MIT",
     "repository": "https://github.com/software-mansion/react-native-gesture-handler",
     "publisher": "Krzysztof Magiera",
@@ -5621,7 +5666,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-in-app-review",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-in-app-review/LICENSE"
   },
-  "react-native-reanimated@2.4.1": {
+  "react-native-reanimated@2.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/software-mansion/react-native-reanimated",
     "publisher": "Krzysztof Magiera",
@@ -5629,7 +5674,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-reanimated",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-reanimated/LICENSE"
   },
-  "react-native-safe-area-context@3.3.2": {
+  "react-native-safe-area-context@3.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/th3rdwave/react-native-safe-area-context",
     "publisher": "Janic Duplessis",
@@ -5637,7 +5682,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-safe-area-context",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-safe-area-context/LICENSE"
   },
-  "react-native-screens@3.11.1": {
+  "react-native-screens@3.13.1": {
     "licenses": "MIT",
     "repository": "https://github.com/software-mansion/react-native-screens",
     "publisher": "Krzysztof Magiera",
@@ -5653,6 +5698,14 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-status-bar-height",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-status-bar-height/LICENSE"
   },
+  "react-native-use-persisted-state@1.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/KoreanThinker/react-native-use-persisted-state",
+    "publisher": "KoreanThinker",
+    "email": "coderhyun476@gmail.com",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-use-persisted-state",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-use-persisted-state/LICENSE"
+  },
   "react-native-vector-icons@9.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/oblador/react-native-vector-icons",
@@ -5667,6 +5720,21 @@
     "publisher": "Martin Stovicek",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-version",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-version/LICENSE"
+  },
+  "react-native-webview@11.17.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/react-native-webview/react-native-webview",
+    "publisher": "Jamon Holmgren",
+    "email": "jamon@infinite.red",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-webview",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-webview/LICENSE"
+  },
+  "react-native-youtube-iframe@2.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/LonelyCpp/react-native-youtube-iframe",
+    "publisher": "Ananthu P Kanive",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-youtube-iframe",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/react-native-youtube-iframe/LICENSE"
   },
   "react-native@0.67.2": {
     "licenses": "MIT",
@@ -6085,7 +6153,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/jest-snapshot/node_modules/semver",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/jest-snapshot/node_modules/semver/LICENSE"
   },
-  "send@0.17.2": {
+  "send@0.18.0": {
     "licenses": "MIT",
     "repository": "https://github.com/pillarjs/send",
     "publisher": "TJ Holowaychuk",
@@ -6102,7 +6170,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/serialize-error",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/serialize-error/license"
   },
-  "serve-static@1.14.2": {
+  "serve-static@1.15.0": {
     "licenses": "MIT",
     "repository": "https://github.com/expressjs/serve-static",
     "publisher": "Douglas Christopher Wilson",
@@ -6125,6 +6193,13 @@
     "url": "https://github.com/jonschlinkert",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/set-value",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/set-value/LICENSE"
+  },
+  "setimmediate@1.0.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/YuzuJS/setImmediate",
+    "publisher": "YuzuJS",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/setimmediate",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/setimmediate/LICENSE.txt"
   },
   "setprototypeof@1.2.0": {
     "licenses": "ISC",
@@ -6436,6 +6511,12 @@
   "statuses@1.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/jshttp/statuses",
+    "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/finalhandler/node_modules/statuses",
+    "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/finalhandler/node_modules/statuses/LICENSE"
+  },
+  "statuses@2.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/statuses",
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/statuses",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/statuses/LICENSE"
   },
@@ -6482,7 +6563,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/string-width",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/string-width/license"
   },
-  "string.prototype.matchall@4.0.6": {
+  "string.prototype.matchall@4.0.7": {
     "licenses": "MIT",
     "repository": "https://github.com/es-shims/String.prototype.matchAll",
     "publisher": "Jordan Harband",
@@ -6863,7 +6944,7 @@
     "path": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/typedarray-to-buffer",
     "licenseFile": "/Users/hyun/Github/krtk/billboard-player/app/node_modules/typedarray-to-buffer/LICENSE"
   },
-  "typescript@4.5.5": {
+  "typescript@4.6.3": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/Microsoft/TypeScript",
     "publisher": "Microsoft Corp.",

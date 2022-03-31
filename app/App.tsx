@@ -6,6 +6,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {COLORS} from './src/constants/styles';
 import PlayerProvider from './src/context/PlayerContext';
 import {PersistedStateProvider} from 'react-native-use-persisted-state';
+import PlaylistProvider from './src/context/PlaylistContext';
 
 LogBox.ignoreLogs([
   "[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
@@ -14,19 +15,21 @@ LogBox.ignoreLogs([
 const App = () => {
   return (
     <PersistedStateProvider>
-      <PlayerProvider>
-        <SafeAreaProvider>
-          <View style={{backgroundColor: COLORS.black, flex: 1}}>
-            <StatusBar
-              barStyle="light-content"
-              translucent
-              animated
-              backgroundColor="transparent"
-            />
-            <Navigation />
-          </View>
-        </SafeAreaProvider>
-      </PlayerProvider>
+      <PlaylistProvider>
+        <PlayerProvider>
+          <SafeAreaProvider>
+            <View style={{backgroundColor: COLORS.black, flex: 1}}>
+              <StatusBar
+                barStyle="light-content"
+                translucent
+                animated
+                backgroundColor="transparent"
+              />
+              <Navigation />
+            </View>
+          </SafeAreaProvider>
+        </PlayerProvider>
+      </PlaylistProvider>
     </PersistedStateProvider>
   );
 };

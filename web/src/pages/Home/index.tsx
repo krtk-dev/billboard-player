@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import Youtube from 'react-youtube';
-import { COLORS } from '../../constants/styles';
+import { BREAK_POINT, COLORS } from '../../constants/styles';
 import { Data } from '../../constants/types';
 import { DATA_URL } from '../../constants/values';
 import HomeHeader from './HomeHeader';
@@ -16,11 +16,21 @@ const Container = styled.div`
 const ContentContainer = styled.div`
   flex: 1;
   flex-direction: row;
+  @media screen and (max-width: ${BREAK_POINT}) {
+    flex-direction: column;
+    height: calc(100vh - 80px);
+  }
 `;
 
 const YoutubeContainer = styled.div`
   flex: 1;
   position: relative;
+  @media screen and (max-width: ${BREAK_POINT}) {
+    flex: none;
+    width: 100vw;
+    height: calc(100vw / 16 * 9);
+  }
+
   & iframe {
     width: 100%;
     height: 100%;
@@ -36,6 +46,9 @@ const ItemContainer = styled.div`
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media screen and (max-width: ${BREAK_POINT}) {
+    height: auto;
   }
 `;
 

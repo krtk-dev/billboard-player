@@ -32,6 +32,8 @@ const Rank = styled.div`
 
 const RankDeltaContainer = styled.div`
   flex-direction: row;
+  align-items: center;
+  margin-top: 2px;
 `;
 
 const RankDelta = styled.div`

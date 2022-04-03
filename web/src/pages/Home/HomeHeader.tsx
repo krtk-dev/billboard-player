@@ -20,6 +20,7 @@ const Container = styled.div`
   @media screen and (max-width: ${BREAK_POINT}) {
     padding: 0px 16px;
     box-shadow: none;
+    height: 56px;
   }
 `;
 

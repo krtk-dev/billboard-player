@@ -5,6 +5,7 @@
 
 
 ![Typescript](https://img.shields.io/badge/Typescript-222222?style=for-the-badge&logo=Typescript&logoColor=#3178C6)
+![React](https://img.shields.io/badge/React-222222?style=for-the-badge&logo=React&logoColor=#61DAFB)
 ![ReactNative](https://img.shields.io/badge/ReactNative-222222?style=for-the-badge&logo=React&logoColor=#61DAFB)
 
 <img width="300" src="https://user-images.githubusercontent.com/48207131/160365007-8a1791ea-cb60-478e-b965-5e1ac7069a82.gif">
@@ -21,6 +22,7 @@
 
 - Web
 
+  https://billboard-player.com
 
 - UI/UX
 

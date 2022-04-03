@@ -1,5 +1,7 @@
 import RootNavigation from './navigations/RootNavigation';
 
-export default function App() {
+const App = () => {
   return <RootNavigation />;
-}
+};
+
+export default App;

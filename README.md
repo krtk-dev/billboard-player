@@ -1,6 +1,8 @@
 [![Cron Crawling](https://github.com/krtk-dev/billboard-player/actions/workflows/cron-crawling.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/cron-crawling.yml)
-[![License GPL3.0](https://img.shields.io/github/license/krtk-dev/translators?style=plat)](LICENSE)
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkrtk-dev%2Fbillboard-player&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
+[![CI Web](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml)
+[![CD Web](https://github.com/krtk-dev/billboard-player/actions/workflows/cd-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/cd-web.yml)
+[![codecov](https://codecov.io/gh/krtk-dev/billboard-player/branch/main/graph/badge.svg)](https://codecov.io/gh/krtk-dev/billboard-player)
+[![License GPL3.0](https://img.shields.io/github/license/krtk-dev/billboard-player?style=plat)](LICENSE)
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
 
 

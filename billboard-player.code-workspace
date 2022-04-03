@@ -4,6 +4,9 @@
 			"path": "app"
 		},
 		{
+			"path": "web"
+		},
+		{
 			"path": "crawler"
 		}
 	],

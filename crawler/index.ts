@@ -60,7 +60,7 @@ export const youtubeSearch = async (q: string): Promise<YoutubeData> => {
   const {
     data: {data: crawlingData},
   } = await axios.get<{data: BillboardData[]}>(
-    'https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/hot100/recent.json',
+    'https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard-hot-100/recent.json',
   );
   // get youtube id & image from cache
   const recentData: SaveData = JSON.parse(

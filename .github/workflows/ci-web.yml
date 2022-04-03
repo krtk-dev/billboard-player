@@ -1,0 +1,43 @@
+name: CI Web
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - "web/**"      
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "web/**"
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node: ["16"]
+    name: Node ${{ matrix.node }} (${{ matrix.platform }})
+    runs-on: ${{ matrix.platform }}
+    defaults:
+      run:
+        working-directory: web
+       
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install modules
+        run: yarn
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run test
+        run: yarn test:coverage
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2

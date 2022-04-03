@@ -1,0 +1,40 @@
+name: CD Web
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - "web/**"
+
+jobs:
+  build-and-deploy:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node: ["16"]
+    name: Node ${{ matrix.node }} (${{ matrix.platform }})
+    runs-on: ${{ matrix.platform }}
+    defaults:
+      run:
+        working-directory: web
+
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install packages and build
+        run: |
+          yarn
+          yarn build
+          
+      - name: Copy CNAME
+        run: cp ../CNAME ./build/CNAME
+          
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./web/build

@@ -1,7 +1,7 @@
 [![Cron Crawling](https://github.com/krtk-dev/billboard-player/actions/workflows/cron-crawling.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/cron-crawling.yml)
-[![CI Web](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml)
+<!-- [![CI Web](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml) -->
 [![CD Web](https://github.com/krtk-dev/billboard-player/actions/workflows/cd-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/cd-web.yml)
-[![codecov](https://codecov.io/gh/krtk-dev/billboard-player/branch/main/graph/badge.svg)](https://codecov.io/gh/krtk-dev/billboard-player)
+<!-- [![codecov](https://codecov.io/gh/krtk-dev/billboard-player/branch/main/graph/badge.svg)](https://codecov.io/gh/krtk-dev/billboard-player) -->
 [![License GPL3.0](https://img.shields.io/github/license/krtk-dev/billboard-player?style=plat)](LICENSE)
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
 

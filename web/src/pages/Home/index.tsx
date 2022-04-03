@@ -1,8 +1,80 @@
+import styled from '@emotion/styled';
+import { useEffect, useState } from 'react';
+import Youtube from 'react-youtube';
+import { COLORS } from '../../constants/styles';
+import { Data } from '../../constants/types';
+import { DATA_URL } from '../../constants/values';
+import HomeHeader from './HomeHeader';
+import HomeItem from './HomeItem';
+
+const Container = styled.div`
+  background-color: ${COLORS.dark_gray};
+  width: 100vw;
+  height: 100vh;
+`;
+
+const ContentContainer = styled.div`
+  flex: 1;
+  flex-direction: row;
+`;
+
+const YoutubeContainer = styled.div`
+  flex: 1;
+  position: relative;
+  & iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+`;
+
+const ItemContainer = styled.div`
+  flex: 1;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
 const Home = () => {
+  const [data, setData] = useState<Data[]>([]);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    // fetch billboard hot 100 data
+    fetch(DATA_URL)
+      .then(r => r.json())
+      .then(v => setData(v.data));
+  }, []);
+
   return (
-    <div>
-      <h1>Billboard Player</h1>
-    </div>
+    <Container>
+      <HomeHeader />
+      {data.length && (
+        <ContentContainer>
+          <YoutubeContainer>
+            <Youtube
+              opts={{ playerVars: { autoplay: 1 } }}
+              videoId={data[index].youtube_id}
+              onEnd={() => setIndex(idx => (idx + 1) % data.length)}
+            />
+          </YoutubeContainer>
+          <ItemContainer>
+            {data.map((item, _index) => (
+              <HomeItem
+                key={item.youtube_id}
+                data={item}
+                isFocused={index === _index}
+                onPress={() => setIndex(_index)}
+              />
+            ))}
+          </ItemContainer>
+        </ContentContainer>
+      )}
+    </Container>
   );
 };
 

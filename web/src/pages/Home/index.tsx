@@ -5,6 +5,7 @@ import { COLORS } from '../../constants/styles';
 import { Data } from '../../constants/types';
 import { DATA_URL } from '../../constants/values';
 import HomeHeader from './HomeHeader';
+import HomeItem from './HomeItem';
 
 const Container = styled.div`
   background-color: ${COLORS.dark_gray};
@@ -31,6 +32,11 @@ const YoutubeContainer = styled.div`
 
 const ItemContainer = styled.div`
   flex: 1;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Home = () => {
@@ -56,7 +62,16 @@ const Home = () => {
               onEnd={() => setIndex(idx => (idx + 1) % data.length)}
             />
           </YoutubeContainer>
-          <ItemContainer />
+          <ItemContainer>
+            {data.map((item, _index) => (
+              <HomeItem
+                key={item.youtube_id}
+                data={item}
+                isFocused={index === _index}
+                onPress={() => setIndex(_index)}
+              />
+            ))}
+          </ItemContainer>
         </ContentContainer>
       )}
     </Container>

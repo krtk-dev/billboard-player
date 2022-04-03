@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 import { mdiApple, mdiGithub, mdiGooglePlay } from '@mdi/js';
 import Icon from '@mdi/react';
-import React from 'react';
-import { COLORS } from '../../constants/styles';
+import { BREAK_POINT, COLORS } from '../../constants/styles';
 import {
   APPSTORE_URL,
   GITHUB_URL,
@@ -18,11 +17,19 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 0px 24px;
   z-index: 99;
+  @media screen and (max-width: ${BREAK_POINT}) {
+    padding: 0px 16px;
+    box-shadow: none;
+  }
 `;
 
 const Title = styled.div`
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
+  @media screen and (max-width: ${BREAK_POINT}) {
+    font-size: 18px;
+  }
 `;
 
 const IconContainer = styled.div`

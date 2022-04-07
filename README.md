@@ -1,7 +1,10 @@
 [![Cron Crawling](https://github.com/krtk-dev/billboard-player/actions/workflows/cron-crawling.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/cron-crawling.yml)
 [![CD Web](https://github.com/krtk-dev/billboard-player/actions/workflows/cd-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/cd-web.yml)
 [![License GPL3.0](https://img.shields.io/github/license/krtk-dev/billboard-player?style=plat)](LICENSE)
+
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
+![Twitter](https://img.shields.io/twitter/follow/koreanthinker?style=social)
+<!-- [![License GPL3.0](https://img.shields.io/github/license/krtk-dev/translators?style=plat)](LICENSE) -->
 <!-- [![CI Web](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml/badge.svg)](https://github.com/krtk-dev/billboard-player/actions/workflows/ci-web.yml) -->
 <!-- [![codecov](https://codecov.io/gh/krtk-dev/billboard-player/branch/main/graph/badge.svg)](https://codecov.io/gh/krtk-dev/billboard-player) -->
 

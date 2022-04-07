@@ -85,7 +85,7 @@ const HomeItem: React.FC<HomeScreenItemProps> = props => {
   const { data, isFocused, onPress } = props;
   const { artist, last_week_rank, name, rank, image } = data;
   const isNew = !last_week_rank;
-  const rankDelta = last_week_rank ? rank - last_week_rank : 0;
+  const rankDelta = last_week_rank ? last_week_rank - rank : 0;
   const isUp = rankDelta > 0;
   return (
     <Container

@@ -1,4 +1,4 @@
-import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {TrackData} from '../../constants/types';
 import {useContext} from 'react';
@@ -8,7 +8,6 @@ import {COLORS} from '../../constants/styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {PlaylistContext} from '../../context/PlaylistContext';
 import trackDataCompare from '../../util/trackDataCompare';
-import {ChartContext} from '../../context/ChartContext';
 
 interface HomeScreenItemProps {
   data: TrackData;
@@ -21,7 +20,7 @@ const HomeScreenItem: React.FC<HomeScreenItemProps> = props => {
   const {toggle, playlist} = useContext(PlaylistContext);
   const {artist, last_week_rank, name, rank} = data;
   const isNew = !last_week_rank;
-  const rankDelta = last_week_rank ? rank - last_week_rank : 0;
+  const rankDelta = last_week_rank ? last_week_rank - rank : 0;
   const isUp = rankDelta > 0;
   const isAdded = !!playlist.find(_data => trackDataCompare(_data, data));
 
